@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class Item extends Component {
     render() {
-        return {/* your code here */ }
-
+        let item = this.props.data;
+        return <div>Item:{item.item}, Price:{this.props.discount? item.price*(1-item.discount): item.price}</div>
     }
 }
 

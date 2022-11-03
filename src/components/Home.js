@@ -4,9 +4,7 @@ import Item from './Item';
 class Home extends Component {
 
     render() {
-        return
-        {/* your code here */ }
-
+        return this.props.store.map(item => <Item key={item.item} data={item} discount={this.props.discount}/>)
     }
 }
 
